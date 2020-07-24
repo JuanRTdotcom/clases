@@ -1,0 +1,175 @@
+
+
+ 3. COMENTARIOS  -  13:45
+
+
+ 5. VARIABLES  -  18:04
+
+ 6. CONSTANTES  -  26:27
+	-variables y su consistencia en su sobreeescritura
+
+ 7. TIPO DE DATOS  -  29:30
+	-numeros
+	-cadena
+	-boolean
+	-fecha
+		-let fecha = new Date()
+
+ 8. OPERADORES ARITMÉTICOS  -  46:15
+	*
+	-
+	+
+	/
+	%
+	()
+
+ 9. OPERADORES RELACIONALES  -  57:24
+	=
+	==
+	===
+	<
+	>
+	>=
+	<=
+	!=
+
+ 10. OPERADORES LÓGICOS  -  01:03:56
+	&&
+	||
+	!
+
+ 11. OPERADORES DE ASIGNACIÓN  -  01:13:53
+	+= 
+	++
+	--
+	-=	
+
+ 12. OPERADOR TERNARIO  -  01:18:20
+	?
+	:
+
+ 13. OPERADORES DE CONCATENACIÓN  -  01:21:30
+	( dato + " " + dato2 + "datosString")
+
+ 14. CONDICIONALES  -  01:26:33
+ - If
+ - If else
+ - If else if
+ - Switch
+--------------------------------->
+ 15. BUCLES  -  01:47:53
+ - While
+ - Do while
+ - For
+ - Break y Continue
+------------------------------------>
+
+ 16. FUNCIONES  -  02:10:19
+ - Sin parámetros
+ - Con parámetros 
+ - Preinicialización de parámetros 
+ - Evaluación de parámetros
+ - Rest 
+ - Spread 
+ - Funciones anónimas
+ - CallBacks 
+ - Arrow
+
+ 17. EVENTOS DE RATÓN  -  02:54:14
+ - Onclic
+ - Onmouseover
+ - Onmouseout
+
+ 18. EVENTOS DE TECLADO  -  03:09:41
+ - Keydown
+ - Keypress
+ - Keyup
+
+ 19. EVENTO DE CARGA Y TEMPORIZADOR  -  03:18:17
+ - Load
+ - Setinterval
+ - Settimeout 
+
+ 20. EVENTOS MULTIMEDIA  -  03:27:49
+ - Play
+ - Ended
+ - Seeking 
+
+ 21. CUADROS DE DIÁLOGOS Y VENTANAS  -  03:35:09
+ - Alert 
+ - Confirm 
+ - Prompt
+
+ 22. TRABAJO CON NÚMEROS  -  03:49:16
+ - Number 
+ - parseInt
+ - parseFloat 
+ - isNaN 
+ - isInteger 
+ - toFixed 
+ - toString 
+
+ 23. TRABAJO CON CADENAS  -  04:02:09
+ - length 
+ - indexOf
+ - search
+ - lastIndexOf
+ - match 
+ - Substr 
+ - substring 
+ - charAt 
+ - startsWith 
+ - endsWith
+ - includes 
+ - repeat 
+ - replace 
+ - slice 
+ - Split
+ - trim 
+ - toLowerCase
+ - toUpperCase 
+ - concat
+ - Variables incluidas
+
+ 24. LOS ARREGLOS  -  04:49:43
+ - Unidimensiones 
+ - Muldimencionales
+
+ 25. TRABAJO CON ARREGLOS  -  05:07:58
+ - Length 
+ - push
+ - pop
+ - join
+ - split 
+ - array.from
+ - sort 
+ - reverse 
+ - for in 
+ - forEach 
+ - find 
+ - findIndex 
+ - filter 
+ - some 
+
+ 26. CLASES Y OBJETOS  -  05:39:08
+ - Propiedades y métodos
+ - Clases 
+ - Objetos
+ - Instanciación 
+ - Herencia 
+
+ 27. MANEJO DEL BOM  -  06:06:28
+ - Propiedades window 
+ - Métodos window
+ - Frames
+ - History 
+ - Location 
+ - Navegator
+ - Screen 
+
+ 28. MANEJO DEL DOM  -  06:51:36
+ - querySelector 
+ - getElement 
+ - Modificar contenido html
+ - Modificar propiedades html
+ - Modificar estilos css
