@@ -6,35 +6,44 @@
     <title>Juan</title>
 </head>
 <body id="body">
-    
-   <div id="contenedor">
-    <div>PICK UP YOU CHONGO</div>
-<div> 
-    <select name="" id="chongo" onchange="llenarSra()">
-        <option disabled selected>Elige tu chongo</option>
-        <option >Bahia Rosa</option>
-        <option >Cafe con piernas</option>
-        <option>Badanys</option>    
-    </select>
-    <div id="llenar">
-
+   
+    <div>
+        <label>Nombre</label>
+        <input type="text" id="_idNombre">
+    </div>
+    <div>
+        <label>Apellido1</label>
+        <input type="text" id="_idApellido1">
+    </div>  
+    <div>
+        <label>Apellido2</label>
+        <input type="text" id="_idApellido2">
+    </div>
+    <div>
+        <label>Edad</label>
+        <input type="number" id="_idEdad" onkeyup="validaDNI()" >
+    </div>
+    <div>
+        <label>DNI</label>
+        <input type="number" id="_idDni" disabled onkeyup="validaNum()" >1242
+        <span style="color: red;display: none">Only 8 dig.</span>
+    </div>
+    <div>
+        
+        <input type="submit" id="Ingresar" value="Ingresar" disabled>
     </div>
 
-</div>  
 
 
-    
-
-
-
-
-
-</div>
-
-    <script src="roberth.js"></script>
+    <!-- <script src="roberth.js"></script> -->
     <script src="nuestrojs.js"></script>
-    <script src="martin.js"></script>
-    <script src="jp.js"></script>
-    <script src="joshua.js"></script>
+    <!-- <script src="martin.js"></script>
+    <div></div>
+    <div></div>
+    <div></div>-->
+
+
 </body>
 </html>
+
+

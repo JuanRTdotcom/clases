@@ -263,8 +263,61 @@ console.log('Roberth');
 // function unirdatos(array_datos){
 //     console.log(array_datos.join('_'))
     
-// }
+// 
+// // alert(`Bienvenido o welcome pues ${usr} y tu perra contraseña es ${passw}`)
+let Rname =document.getElementById('_idNombre')
+let lastName1 = document.getElementById('_idApellido1')
+let lastName2 = document.getElementById('_idApellido2')
+let btn = document.getElementById('_idIngresar')
+let span = document.getElementById('idspan')
+let edM = document.getElementById('_idEdad')
+let Midni =document.getElementById('_iddni')
 
+let array_datos = []
 
+function validaEdad(){
+   
 
+    if(Number(edM.value) >17){
+        Midni.removeAttribute('disabled','')  
+    } 
+    else {
+        Midni.setAttribute('disabled','')
+    }
+} 
 
+function validadni(){
+
+    if(Number(Midni.value) >9999999 && Number(Midni.value) < 10000000){
+btn.removeAttribute('disabled','')
+span.style.display='none'
+
+    }
+else{ 
+    btn.setAttribute('disabled','')
+    span.style.display='block'
+
+}
+}
+
+btn.addEventListener('click',()=>{
+array_datos.push(Rname.value)
+array_datos.push(lastName1.value)
+array_datos.push(lastName2.value)
+array_datos.push(edM.value)
+
+if(Midni.value.length == 8){
+    array_datos.push(Midni.value)
+}else{
+       array_datos.push('Eres menor ctm')               
+}
+alert(array_datos.join('|'))
+
+array_datos = []
+Rname.value= ''
+lastName1.value= ''
+lastName2.value= ''
+edM.value=''
+Midni.value=''
+
+})

@@ -263,7 +263,6 @@ let nombreCiudad='Trujillox'
 
 // ajuntar(array)
 
-
 // function ajuntar(miarray){ 
 //     console.log(miarray)
     
@@ -279,66 +278,29 @@ let nombreCiudad='Trujillox'
 // let boton=document.getElementById('btn_sumar')
 // let btn1=document.getElementById('btn_multiplicar')
 // let btn2=document.getElementById('btn_dividir')
+
 // let n1=document.getElementById('n1')
 // let n2=document.getElementById('n2')
 
 // boton.addEventListener('click',()=>{
 //     let resp=Number(n1.value)+Number(n2.value)
 //     alert(resp)
-
 // })
 //
 // nombre.removeAttribute('disabled','')
 
-// var btn=document.getElementById('btn_ingresar')
-// var lbl1=document.getElementById('nombre')
-// var lbl2=document.getElementById('apellido')
-// var lbl3=document.getElementById('edad')
-// var lbl4=document.getElementById('dni')
-// var span=document.getElementById('span')
-// var array=[]
-
-// btn.addEventListener('click',()=>{
-//     array.push(lbl1.value)
-//     array.push(lbl2.value)
-//     array.push(lbl3.value)
-//     if(lbl4.value!=''){
-//         array.push(lbl4.value)
-//     }else{
-//         array.push('Es menor de edad')
-//     }
-
-//     alert(array.join(' - '));
-
-// })
-
-// function validaDNI(){
-//     if(Number(lbl4.value)<=99999999 && Number(lbl4.value)>9999999){
-//                 // cumple
-//                 btn.removeAttribute('disabled','') 
-//                 span.style.display='none'
-
-//        }else{
-//            //no cumple
-           
-//            btn.setAttribute('disabled','')
-//            span.style.display='block'
-
-//        }
-
-                                
-// }
 
 
-// function validaEdad(){
-    
-//     if(Number(lbl3.value)>17 ){
-//         lbl4.removeAttribute('disabled','')               
-//     }else{
-//         lbl4.setAttribute('disabled','')
-//     }
 
-// }
+
+
+
+
+
+
+
+
+
 var chongo=document.getElementById('chongo')
 var llenar=document.getElementById('llenar')
 // let miOpcionBH = `
@@ -356,52 +318,58 @@ var llenar=document.getElementById('llenar')
 // <select id="BD" >
 //     <option >Tina</option>
       
-// </select>`
+// // </select>`
 
-let miBH = ['tu tia', 'tu prima']
-let miCP = ['tu otra tia','tu otra prima']  
-let miBada=['tu papa','tu tio']
+// let miBH = ['tu tia', 'tu prima']
+// let miCP = ['tu otra tia','tu otra prima']  
+// let miBada=['tu papa','tu tio']
 
-function llenarSra(){
-    llenar.innerHTML=``
-    if(chongo.value=='Bahia Rosa'){
-        let miRes=document.createElement('div')
-        let tuRes=document.createElement('select')
+// function llenarSra(){
+//     llenar.innerHTML=``
+//     if(chongo.value=='Bahia Rosa'){
+//         let miRes=document.createElement('div')
+//         let tuRes=document.createElement('select')
         
           
-    for(var i=0; i<miBH.length;i++){
-        let opc=document.createElement('option')
-            opc.textContent=miBH[i]
-            tuRes.appendChild(opc)           
-    } 
-    miRes.appendChild(tuRes)      
-    llenar.appendChild(miRes)
+//     for(var i=0; i<miBH.length;i++){
+//         let opc=document.createElement('option')
+//             opc.textContent=miBH[i]
+//             tuRes.appendChild(opc)           
+//     } 
+//     miRes.appendChild(tuRes)      
+//     llenar.appendChild(miRes)
         
 
-    }else if(chongo.value=='Cafe con piernas'){
-        let miRes=document.createElement('div')
-        let tuRes=document.createElement('select')
+//     }else if(chongo.value=='Cafe con piernas'){
+//         let miRes=document.createElement('div')
+//         let tuRes=document.createElement('select')
         
           
-    for(var i=0; i<miCP.length;i++){
-        let opc=document.createElement('option')
-            opc.textContent=miCP[i]
-            tuRes.appendChild(opc)           
-    } 
-    miRes.appendChild(tuRes)      
-    llenar.appendChild(miRes)
+//     for(var i=0; i<miCP.length;i++){
+//         let opc=document.createElement('option')
+//             opc.textContent=miCP[i]
+//             tuRes.appendChild(opc)           
+//     } 
+//     miRes.appendChild(tuRes)      
+//     llenar.appendChild(miRes)
         
 
-    }else if(chongo.value=='Badanys'){
-        let miRes=document.createElement('div')
-        let tuRes=document.createElement('select')
+//     }else if(chongo.value=='Badanys'){
+//         let miRes=document.createElement('div')
+//         let tuRes=document.createElement('select')
         
           
-    for(var i=0; i<miBada.length;i++){
-        let opc=document.createElement('option')
-            opc.textContent=miBada[i]
-            tuRes.appendChild(opc)           
-    } 
-    miRes.appendChild(tuRes)      
-    llenar.appendChild(miRes)
-}}
+//     for(var i=0; i<miBada.length;i++){
+//         let opc=document.createElement('option')
+//             opc.textContent=miBada[i]
+//             tuRes.appendChild(opc)           
+//     } 
+//     miRes.appendChild(tuRes)      
+//     llenar.appendChild(miRes)
+// }}
+
+
+
+
+
+

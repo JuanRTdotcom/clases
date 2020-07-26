@@ -364,4 +364,76 @@ console.log('Joshua Semi Dios');
 // })
 
 
+// document.getElementById('btn_ingresar').addEventListener('click',()=>{
+//     let us=document.getElementById('user').value.trim().replace(' ','')
+//     let con=document.getElementById('pass').value.trim().replace(' ','')
+//     if(us==''||con==''){
+//         alert('Ingresa bien los datos joputa')
+//     }else{
+//         console.log(`Bienvenido usuario ${us} con contraseña ${con}`)
 
+//     }
+
+// })
+// let n1 = document.getElementById('n1')
+// let n2= document.getElementById('n2')
+// document.getElementById('sumar').addEventListener('click',()=>{
+//     let num1=n1.value
+//     let num2=n2.value
+//     let resul=Operar(Number(num1),Number(num2),'suma')
+//     console.log(`El Resultado de Sumar ${num1} + ${num2} es igual ${resul}`)
+         
+// })
+
+// document.getElementById('restar').addEventListener('click',()=>{
+//     let num1=n1.value
+//     let num2=n2.value
+//     let resul=Operar(Number(num1),Number(num2),'resta')
+//     console.log(`El Resultado de Restar ${num1} - ${num2} es igual ${resul}`)
+      
+// })
+
+// document.getElementById('multiplicar').addEventListener('click',()=>{
+//     let num1=n1.value
+//     let num2=n2.value
+//     let resul=Operar(Number(num1),Number(num2),'multiplicacion')
+//     console.log(`El Resultado de Multiplicar ${num1} * ${num2} es igual ${resul}`)
+      
+// })
+
+
+// function Operar(n1=0,n2=0,operador){
+//     let suma,resta,multi
+//     if(operador=='suma'){
+//         return suma=n1+n2
+//     }else if(operador=='resta'){
+//          return resta=n1-n2
+//     }else if(operador=='multiplicacion'){
+//         return multi=n1*n2
+//     }
+// }
+
+let nombre=document.getElementById('idNom').value
+let apellido1=document.getElementById('idApell1').value
+let apellido2=document.getElementById('idApell2').value
+let edad=document.getElementById('_idEd').value.Number
+let dni=document.getElementById('idDNI')
+let button=document.getElementById('_ingresar')
+
+
+button.addEventListener('click',()=>{
+
+})
+
+function validarEd(edad=0){
+    if(edad<18){
+       dni.removeAttribute('disable',' ')
+    }
+    
+
+} 
+
+function validarDNI(edad){
+
+
+}

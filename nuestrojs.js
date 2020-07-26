@@ -273,3 +273,34 @@ let nombreCiudadCartajena = 'Kirume'
 //  let nombre=document.getElementById('nombre')
  
 // nombre.removeAttribute('disabled','')
+
+
+
+// document.getElementById('btn_ingresar').addEventListener('click',()=>{
+//     let usuario=document.getElementById('user').value
+//     let pass = document.getElementById('pass').value    
+//     alert('Bienvenido '+usuario)
+    
+// })
+
+
+let nombre = document.getElementById('nombre')
+nombre.value
+
+document.getElementById('elem').setAttribute('desabled','') // bloquea
+document.getElementById('elem').removeAttribute('desabled','') //desbloquea
+
+document.getElementById('elemento').style.display='block' //aparecer
+document.getElementById('elemento').style.display='none'  //desaparecer
+
+function validaDNI(){
+    let edad = document.getElementById('idedad').value
+
+    if(Number(edad)>17){
+        //activamos input DNI
+        
+    }else{
+        //desactivamos input DNI
+        
+    }
+}

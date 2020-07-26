@@ -401,3 +401,140 @@ console.log('De Jean ;v');
 // }
 
 
+//************************************************************* */
+// escribir un programa que lea 3 prompt
+// nombre
+// apellidos
+// edad
+// si soy mayor de edad, me pide DNI, si no, no pide nada
+// TODOS LOS ELEMENTOS SE DEBEN GUARDAR EN UN ARRAY
+// con el array como parametro , usamos una funcion para mostrar
+// en un console los datos unidos y separados por un '-'
+
+// let mostrar = (variablex) =>{
+//     console.log(variablex.join('-'))
+//     }
+
+// let arry = []
+// let nombre = prompt ('Ingresar Nombre')
+// arry.push(nombre)
+// let apellido = prompt ('Ingresar Apellido')
+// arry.push(apellido)
+// let edad = prompt('Ingresar Edad')
+// arry.push(edad)
+
+// if(Number(edad)>17){
+//     let dni = prompt('Ingrese Su DNI')
+//     arry.push(dni)
+// }else{
+//     alert('NO ES MENOR DE EDAD')
+//     arry.push('Es menor de edad')
+// }mostrar(arry);
+
+// A partir de la página web proporcionada y utilizando las funciones DOM, mostrar por pantalla la siguiente información:
+
+// Número de enlaces de la página
+// Dirección a la que enlaza el penúltimo enlace
+// Numero de enlaces que enlazan a http://prueba
+// Número de enlaces del tercer párrafo
+
+
+// document.getElementById('btn_ingresar').addEventListener('click',()=>{
+//     let user=document.getElementById('usuario').value
+//     let pass=document.getElementById('contraseña').value
+//     let suma = Number(user) + Number(pass)
+//     alert(`Bienvenido la suma es ${suma}`)
+// })
+
+
+// document.getElementById('btn_ingresar').addEventListener('click',()=>{
+//     let usr = document.getElementById('user').value.replace(' ','').trim()
+//     let passw= document.getElementById('pass').value.replace(' ','').trim()
+//     if( usr == "" || passw == ""){
+//         console.log('LLENA LOS DATOS CONCHATUMARE')
+//     }else{
+//         alert(`Bienvenido o welcome pues ${usr} y tu perra contraseña es ${passw}`)
+//     }
+    
+// })
+
+
+// let number1= document.getElementById('n1')
+// let number2= document.getElementById('n2')
+
+// document.getElementById('sumar').addEventListener('click',()=>{
+//     let x = number1.value
+//     let y = number2.value
+//     let suma= Number(x) + Number(y)
+//     alert(`tu suma es ${suma}`)
+// })
+// document.getElementById('restar').addEventListener('click',()=>{
+//     let x = number1.value
+//     let y = number2.value
+//     let resta= Number(x) - Number(y)
+//     alert(`tu resta es ${resta}`)
+// })
+// document.getElementById('multiplicar').addEventListener('click',()=>{
+//     let x = number1.value
+//     let y = number2.value
+//     let multiplicar= Number(x) * Number(y)
+//     alert(`tu mulplicacion es ${multiplicar}`)
+// })          
+//document.getElementById('elem').setAttribute('desabled','')
+//document.getElementById('elem').removeAttribute('desabled','')
+//document.getElementById('elemento').style.display='block'
+//document.getElementById('elemento').style.display='none'
+
+// let name = document.getElementById('_idName')
+// let lastName1 = document.getElementById('_idLastName1')
+// let lastName2 = document.getElementById('_idLastName2') // aca estoy 
+// let edad = document.getElementById('_idEdad')
+//     let dnii = document.getElementById('_idDni')
+
+// let btn = document.getElementById('_idIngresar')
+// let spn = document.getElementById('idspan')
+// let arry = []
+
+// btn.addEventListener('click',()=>{
+    
+
+//     arry.push(name.value)
+//     arry.push(lastName1.value)
+//     arry.push(lastName2.value)
+//     arry.push(edad.value)
+
+//     if(dnii.value.length == 8){
+//         arry.push(dnii.value)
+
+//     }else{
+//         arry.push('Es menor de Edad')
+//     }
+//     alert(arry.join('-'))
+//     arry = []
+//     name.value = ''
+//     lastName1.value= ''
+//     lastName2.value=''
+//     edad.value=''
+//     dnii.value=''
+// })
+
+// function validaEdad(){
+    
+    
+//     if (Number(edad.value)>17){
+//         dnii.removeAttribute('disabled','')
+        
+//     }else{
+//         dnii.setAttribute('disabled','')
+     
+// }}
+// let validaDNI =()=>{
+//     if(Number(dnii.value)>9999999 && Number(dnii.value)<100000000){
+//         btn.removeAttribute('disabled','')
+//         spn.style.display='none'
+//     }else{
+//         btn.setAttribute('disabled','')
+//         spn.style.display='block'
+//     }
+
+// }
