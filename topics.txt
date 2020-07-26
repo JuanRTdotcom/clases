@@ -4,52 +4,90 @@
 
 
  5. VARIABLES  -  18:04
+	var  juego = 12
+		
+
+	let   
+
+	const
+
 
  6. CONSTANTES  -  26:27
+ 
 	-variables y su consistencia en su sobreeescritura
 
  7. TIPO DE DATOS  -  29:30
-	-numeros
+	-numeros // +  -  ,
+	  - Int  	+ o - pero enteros
+	  - float   + o - con decimales
 	-cadena
+		- String // cadena de caracteres
+		- char // a
 	-boolean
+		- tru o fols
 	-fecha
 		-let fecha = new Date()
+	-array
+		-let array = ['String', [1,2],tru,{}]
+				- array[0]
+	-object	{
+			casa : 'Av dsa',
+			nombre : 'Juan'
+		}
+				- object.nombre
 
  8. OPERADORES ARITMÉTICOS  -  46:15
-	*
-	-
-	+
-	/
-	%
-	()
+	*  
+	-  	
+	+	
+	/	
+	%		10%2 = 0
+	()		+ * - /
 
  9. OPERADORES RELACIONALES  -  57:24
-	=
-	==
-	===
-	<
+	=		asignar		a=10   b='10'
+	==			comparar   a == b  -> true
+	===			compara tipo de dato  a===b  -> false
+	<	
 	>
 	>=
 	<=
-	!=
+	!=		a!=b  a==b
 
  10. OPERADORES LÓGICOS  -  01:03:56
-	&&
+	&&	if ( ___  && __  ||)
 	||
-	!
+	!	a = 20
+		if(!a){
+			
+		}
 
  11. OPERADORES DE ASIGNACIÓN  -  01:13:53
-	+= 
+	+=   a+=b
 	++
 	--
 	-=	
+	
 
  12. OPERADOR TERNARIO  -  01:18:20
 	?
 	:
 
+	if(a){
+
+	}else{
+
+	}
+
+	a
+	? //true
+	:	//false
+
+
  13. OPERADORES DE CONCATENACIÓN  -  01:21:30
 	( dato + " " + dato2 + "datosString")
+	
+	
 
  14. CONDICIONALES  -  01:26:33
  - If

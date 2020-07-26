@@ -1,4 +1,4 @@
-console.log('De Jean ;v');
+// console.log('De Jean ;v');
 // let miarrayobjtos=[{distrito:'El porvenir',ciudad:'Trujillo'},{distrito:'Moche',ciudad:'Trujillo'}]
 // for(let i=0; i<miarrayobjtos.length; i++){
 //     // console.log("Yo vivo en la ciudad de "+ miarrayobjtos[i].ciudad+(" y en el distrito de ")+miarrayobjtos[i].distrito)
@@ -538,3 +538,29 @@ console.log('De Jean ;v');
 //     }
 
 // }
+let bdUsers = [
+     {nombre:'Jean Pierre',usuario: 'root',password: 'root'},
+     {nombre:'Martin Ruiz',usuario: 'admin',password: 'admin'},
+     {nombre:'Renzo Terrones',usuario: 'qwer',password: 'qwer'}
+]
+
+
+let user = document.getElementById('_user')
+let pass = document.getElementById('_pass')
+let formulario = document.getElementById('_Form')
+let btn_ingres = document.getElementById('_ingresar')
+
+formulario.addEventListener('submit',(e)=>{
+    e.preventDefault()
+    let validar=false
+    for (let i=0;i<bdUsers.length;i++){
+        if(bdUsers[i].usuario== user.value && bdUsers[i].password== pass.value) {
+            swal("Correcto", 'Bienvenido '+ bdUsers[i].nombre, "success");
+            valida =true
+            break;
+        }
+    }
+    valida==false
+    ?swal("Error", ' Usuario Incorrecto ', "error")
+    :{}
+})

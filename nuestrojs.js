@@ -284,23 +284,59 @@ let nombreCiudadCartajena = 'Kirume'
 // })
 
 
-let nombre = document.getElementById('nombre')
-nombre.value
+// let nombre = document.getElementById('nombre')
+// nombre.value
 
-document.getElementById('elem').setAttribute('desabled','') // bloquea
-document.getElementById('elem').removeAttribute('desabled','') //desbloquea
+// document.getElementById('elem').setAttribute('desabled','') // bloquea
+// document.getElementById('elem').removeAttribute('desabled','') //desbloquea
 
-document.getElementById('elemento').style.display='block' //aparecer
-document.getElementById('elemento').style.display='none'  //desaparecer
+// document.getElementById('elemento').style.display='block' //aparecer
+// document.getElementById('elemento').style.display='none'  //desaparecer
 
-function validaDNI(){
-    let edad = document.getElementById('idedad').value
+// function validaDNI(){
+//     let edad = document.getElementById('idedad').value
 
-    if(Number(edad)>17){
-        //activamos input DNI
+//     if(Number(edad)>17){
+//         //activamos input DNI
         
-    }else{
-        //desactivamos input DNI
+//     }else{
+//         //desactivamos input DNI
         
+//     }
+// }
+
+// let form = document.getElementById('form')
+// form.addEventListener('submit',(e)=>{
+//     e.preventDefault()
+// })
+let bdUser = 
+[
+    {nombre:'Juan Ruiz Trujillo',usuario:'root',contraseña:'root'},
+    {nombre:'Jean Pierre',usuario:'admin',contraseña:'admin'},
+    {nombre:'Martin Ruiz',usuario:'qwer',contraseña:'qwer'}
+
+]
+//////////////////////////////////////////
+let user = document.getElementById('_user')
+let pass = document.getElementById('_pass')
+let btnIngresar = document.getElementById('Ingresar')
+let form = document.getElementById('_form')
+
+
+form.addEventListener('submit',(e)=>{
+    e.preventDefault()
+    let valida = false
+    for(let i = 0;i<bdUser.length;i++){
+        if(bdUser[i].usuario == user.value && bdUser[i].contraseña == pass.value){
+            swal("Correcto", 'Bienvenido '+ bdUser[i].nombre, "success");
+            valida=true
+            break;
+        }
     }
-}
+    valida==false
+        ? swal("ERROR", 'Usuario Incorrecto', "error")
+        : {}
+})
+
+
+

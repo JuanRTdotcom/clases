@@ -1,40 +1,67 @@
-<!-- i<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body id="body">
-   <div>
-       <label>Nombre</label>
-       <input type="text" id="_idName">
-   </div>
-   <div>
-       <label>Apellid Materno</label>
-       <input type="text" id="_idLastName1">
-   </div>
-   <div>
-       <label>Apellido Paterno</label>
-       <input type="text" id="_idLastName2">
-   </div>
-   <div>
-       <label>Edad</label>
-       <input type="number" id="_idEdad" onkeyup="validaEdad()">
-   </div>
-   <div>
-       <label>DNI</label>
-       <input type="number" id="_idDni" disabled onkeyup="validaDNI()" > 
-      
-       <span style="color: red ; display: none"; id="idspan"> Solo 8 digitos RECONCHATUMARE </span>
-   </div>
-   <div>
-       
-       <input type="submit" value="ingresar" id="_idIngresar" disabled>
-   </div>
+    <div style="width: 100vw;height: 100vh;background: rgba(150, 184, 184, 0.904); display: flex;justify-content: center;align-items: center; "> 
+        <div>
+            <form action="/" method="post" id="_Form">
+                <div class="input-group mb-3" style="text-align: center;">
+                    <h1  class="col-12">Welcome</h1>
+                </div>
+                
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">
+                          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" autofocus id="_user" placeholder="Username"aria-label="Username" aria-describedby="basic-addon1">
+                </div>
 
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">
+                          <i class="fa fa-key" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <input type="password" class="form-control" id="_pass" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1" style="color:rgb(13, 97, 97)">Recordar</label>
+    
+                </div>
+                <div class="input-group mb-3" >
+                        <button type="submit" class="btn btn-primary col-12" id="_ingresar">Ingresar</button>
+                </div>
+               
+                <div class="input-group mb-3">
+                    <button type="submit" class="btn btn-link col-12">
+                        <i class="fa fa-question-circle" aria-hidden="true" style="color:rgb(20, 22, 22)">Te Olvidaste Contraseña</i>
+                       
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    
+
+   
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="jp.js"></script>
 </body>
 </html>
- -->
+
 

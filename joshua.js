@@ -413,27 +413,17 @@ console.log('Joshua Semi Dios');
 //     }
 // }
 
-let nombre=document.getElementById('idNom').value
-let apellido1=document.getElementById('idApell1').value
-let apellido2=document.getElementById('idApell2').value
-let edad=document.getElementById('_idEd').value.Number
-let dni=document.getElementById('idDNI')
-let button=document.getElementById('_ingresar')
+// let nombre=document.getElementById('idNom').value
+// let apellido1=document.getElementById('idApell1').value
+// let apellido2=document.getElementById('idApell2').value
+// let edad=document.getElementById('_idEd').value
+// let dni=document.getElementById('idDNI')
+// let button=document.getElementById('_ingresar')
+// let array[]
 
 
-button.addEventListener('click',()=>{
-
-})
-
-function validarEd(edad=0){
-    if(edad<18){
-       dni.removeAttribute('disable',' ')
-    }
+// button.addEventListener('click',()=>{
+      
     
+// })
 
-} 
-
-function validarDNI(edad){
-
-
-}
