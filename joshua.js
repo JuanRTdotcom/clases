@@ -427,3 +427,45 @@ console.log('Joshua Semi Dios');
     
 // })
 
+
+// let bdUser = 
+// [
+//     {nombre:'Juan Ruiz Trujillo',usuario:'root',contraseña:'root'},
+//     {nombre:'Jean Pierre',usuario:'admin',contraseña:'admin'},
+//     {nombre:'Martin Ruiz',usuario:'qwer',contraseña:'qwer'},
+//     {nombre:'Joshua Silva',usuario:'josh',contraseña:'1123'}
+
+// ]
+
+// let usuario=document.getElementById('_user')
+// let contra=document.getElementById('_pass')
+// let boton=document.getElementById('_Ingresar')
+// let form = document.getElementById('_form')
+
+// form.addEventListener('submit',(e)=>{
+//     e.preventDefault()
+       
+//     for(let i=0; i<bdUser.length;i++){
+      
+//            if(bdUser[i].usuario==usuario.value && bdUser[i].contraseña==contra.value){
+//                swal('CORRECTO','Bienvenido '+bdUser[i].nombre,"success")
+               
+//                break;
+             
+//            }else {
+//                swal('INCORRECTO','Contraseña Erronea'+bdUser[i].nombre,'error')
+              
+
+//            }
+         
+
+//        }
+
+
+// })
+
+
+
+
+
+

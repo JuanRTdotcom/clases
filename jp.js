@@ -537,30 +537,124 @@
 //         spn.style.display='block'
 //     }
 
-// }
-let bdUsers = [
-     {nombre:'Jean Pierre',usuario: 'root',password: 'root'},
-     {nombre:'Martin Ruiz',usuario: 'admin',password: 'admin'},
-     {nombre:'Renzo Terrones',usuario: 'qwer',password: 'qwer'}
-]
+// // }
+// let bdUsers = [
+//      {nombre:'Jean Pierre',usuario: 'root',password: 'root'},
+//      {nombre:'Martin Ruiz',usuario: 'admin',password: 'admin'},
+//      {nombre:'Renzo Terrones',usuario: 'qwer',password: 'qwer'}
+// ]
 
 
-let user = document.getElementById('_user')
-let pass = document.getElementById('_pass')
-let formulario = document.getElementById('_Form')
-let btn_ingres = document.getElementById('_ingresar')
+// let user = document.getElementById('_user')
+// let pass = document.getElementById('_pass')
+// let formulario = document.getElementById('_Form')
+// let btn_ingres = document.getElementById('_ingresar')
 
-formulario.addEventListener('submit',(e)=>{
-    e.preventDefault()
-    let validar=false
-    for (let i=0;i<bdUsers.length;i++){
-        if(bdUsers[i].usuario== user.value && bdUsers[i].password== pass.value) {
-            swal("Correcto", 'Bienvenido '+ bdUsers[i].nombre, "success");
-            valida =true
+// formulario.addEventListener('submit',(e)=>{
+//     e.preventDefault()
+//     let validar=false
+//     for (let i=0;i<bdUsers.length;i++){
+//         if(bdUsers[i].usuario== user.value && bdUsers[i].password== pass.value) {
+//             swal("Correcto", 'Bienvenido '+ bdUsers[i].nombre, "success");
+//             valida =true
+//             break;
+//         }
+//     }
+//     valida==false
+//     ?swal("Error", ' Usuario Incorrecto ', "error")
+//     :{}
+// })
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.sidenav');
+//     var instances = M.Sidenav.init(elems, options);
+//   });
+
+//   // Or with jQuery
+
+//   $(document).ready(function(){
+//     $('.sidenav').sidenav();
+//   });
+
+
+let pantalla = document.getElementById('_pantalla')
+let teclas = document.getElementById('_teclasPadre')
+// let estado = false
+let primeroper
+let segundoper
+let operador 
+
+teclas.addEventListener('click',(e)=>{
+    let elclick=e.target
+    // console.log(elclick.innerHTML)
+    switch(e.target.innerHTML){
+        case 'C':
+            pantalla.innerHTML = '0'
             break;
+        case '*':
+            // estado = true
+            primeroper = pantalla.innerHTML
+            pantalla.innerHTML = '*'
+            operador = '*'
+            break;
+        case '/':
+                // estado = true
+            primeroper = pantalla.innerHTML
+            pantalla.innerHTML = '/'
+            operador = '/'
+            break;
+        case '-':
+                    // estado = true
+            primeroper = pantalla.innerHTML
+            pantalla.innerHTML = '-'
+            operador = '-'
+            break; 
+        case '+':
+                        // estado = true
+            primeroper = pantalla.innerHTML
+            pantalla.innerHTML = '+'
+            operador = '+'
+                                    
+            
+            // let segundoper=
+            break;
+        case '=':
+            segundoper = pantalla.innerHTML
+            let resultado = oper(operador)
+            pantalla.innerHTML = resultado
+            break;
+
+        default://numeros
+            if(pantalla.innerHTML.trim() == '0'|| pantalla.innerHTML.trim() == '*'|| pantalla.innerHTML.trim() == '+'|| pantalla.innerHTML.trim() == '-'|| pantalla.innerHTML.trim() == '/'){
+                pantalla.innerHTML = ''
+                pantalla.innerHTML += elclick.innerHTML
+            }else{
+                pantalla.innerHTML += elclick.innerHTML
+            }
         }
-    }
-    valida==false
-    ?swal("Error", ' Usuario Incorrecto ', "error")
-    :{}
 })
+
+function oper(operador){ // * / - +
+    if(operador == '*'){
+        
+        let multi = primeroper * segundoper
+        return multi
+        
+    }else if(operador == '/'){
+
+        if(segundoper == '0'){
+            return pantalla.innerHTML = 'No hay'
+        }
+        let divi= Number(primeroper) / Number(segundoper)
+        return divi
+ 
+    }else if( operador == '-'){
+        let multi=Number(primeroper) - Number(segundoper)
+        return multi
+        
+    }else if ( operador == '+'){
+        let suma=Number(primeroper) + Number(segundoper)
+        return suma
+    }
+
+}

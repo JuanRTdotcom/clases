@@ -7,9 +7,38 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        ._teclasPadre {
+            
+            display: grid;  
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 60px 60px 60px 60px 60px;
+            column-gap: 10px;
+            row-gap: 10px;
+            padding: 10px 0;
+        }
+        .sumita {
+            padding-top: 75px !important ;
+            grid-column: 4/5;
+            grid-row:2/6;
+        }
+        ._teclasPadre div{
+            padding: 10px;   
+            box-sizing: border-box; 
+            font-size: 25px;
+            width : 100%;
+            height :100%;
+            cursor: pointer;
+            text-align : center;
+            background: rgb(228, 158, 207);
+            cursor :pointer;
+
+        
+        }
+    </style>
 </head>
 <body id="body">
-    <div style="width: 100vw;height: 100vh;background: rgba(150, 184, 184, 0.904); display: flex;justify-content: center;align-items: center; "> 
+    <!-- <div style="width: 100vw;height: 100vh;background: rgba(150, 184, 184, 0.904); display: flex;justify-content: center;align-items: center; "> 
         <div>
             <form action="/" method="post" id="_Form">
                 <div class="input-group mb-3" style="text-align: center;">
@@ -53,7 +82,36 @@
 
         </div>
     </div>
-    
+     -->
+     
+    <div style="width: 100vw;height: 100vh;background:rgb(193, 218, 169);display: flex;justify-content: center;align-items: center;">
+        <div style="background:#f574b0;min-height: 50px;padding:15px !important;" class="col-4">
+            <div class="col-12 " id="_pantalla" style="background: #dfa7a7;height: 70px;font-size: 45px;text-align: right;">
+                0
+            </div>
+            <div class="col-12 _teclasPadre" id='_teclasPadre' > 
+                <div class="col-12 _teclas">C</div>
+                <div class="col-12 _teclas">/</div>
+                <div class="col-12 _teclas">*</div>
+                <div class="col-12 _teclas">-</div>
+                <div class="col-12 _teclas">7</div>
+                <div class="col-12 _teclas">8</div>
+                <div class="col-12 _teclas">9</div>
+                <div class="col-12 _teclas sumita">+</div>
+                <div class="col-12 _teclas">4</div>
+                <div class="col-12 _teclas">5</div>
+                <div class="col-12 _teclas">6</div>
+                <div class="col-12 _teclas">3</div>
+                <div class="col-12 _teclas">2</div>
+                <div class="col-12 _teclas">1</div>
+                <div class="col-12 _teclas">0</div>
+                <div class="col-12 _teclas">.</div>
+                <div class="col-12 _teclas">=</div>
+
+            </div>
+
+        </div>
+    </div>
 
    
     

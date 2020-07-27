@@ -4,14 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .teclas{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 50px 50px 50px 50px 50px;
+            column-gap: 10px;
+            row-gap: 10px;
+            padding: 10px 0;
+        }
+        .teclas div{
+            width: 100%;
+            height: 100%;
+            background: rgb(216, 215, 215);
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+
+
+
+
 </head>
 <body id="body">
 
-    <div style="width: 100vw;height: 100vh;background:pink;display: flex; justify-content: center;align-items: center;">
+
+    <div style="width: 100vw;height: 100vh;background:rgb(116, 108, 114);display: flex;justify-content: center;align-items: center;">
+        <div style="background:#054274;min-height: 50px;padding:15px !important;" class="col-4">
+            <div class="col-12 " id="_pantalla" style="background: #42a4d1;height: 70px;font-size: 45px;text-align: right;">
+                Enter your namber
+            </div>
+            <div class="col-12 teclas">
+                <div class="col-12 misTeclas">C</div>
+                <div class="col-12 misTeclas">*</div>
+                <div class="col-12 misTeclas">/</div>
+                <div class="col-12 misTeclas">-</div>
+                <div class="col-12 misTeclas">9</div>
+                <div class="col-12 misTeclas">8</div>
+                <div class="col-12 misTeclas">7</div>
+                <div class="col-12 misTeclas">+</div>
+                <div class="col-12 misTeclas">6</div>
+                <div class="col-12 misTeclas">5</div>
+                <div class="col-12 misTeclas">4</div>
+                <div class="col-12 misTeclas">3</div>
+                <div class="col-12 misTeclas">2</div>
+                <div class="col-12 misTeclas">1</div>
+                <div class="col-12 misTeclas">0</div>
+                <div class="col-12 misTeclas">.</div>
+                <div class="col-12 misTeclas">=</div>
+
+            </div>
+
+
+ 
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="martin.js"></script>
+    
+</body>
+</html>
+
+
+   <!-- <div style="width: 100vw;height: 100vh;background:pink;display: flex; justify-content: center;align-items: center;">
         <div>
             <form action="/" method="post" id="f">
 
@@ -62,14 +123,4 @@
         </div>
 
         
-    </div>   
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="martin.js"></script>
-    
-</body>
-</html>
-
-
+    </div>    -->

@@ -7,9 +7,36 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        ._teclas{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(5,80px);
+            column-gap: 10px;
+            row-gap: 10px;
+            padding: 10px 0;
+        }
+        .mas{
+            padding-top: 150px !important ;
+            grid-column: 4/5;
+            grid-row:2/6;
+        }
+        ._teclas div{
+            width: 100%;
+            height: 100%;
+            background: rgb(216, 215, 215);
+            text-align: center;
+            cursor: pointer;
+            font-size: 30px;
+            font-weight: 400;
+            box-sizing: border-box;
+            padding: 15px;
+            border-radius: 3px;
+        }
+    </style>
 </head>
 <body id="body">
-   
+<!--    
     <div style="width: 100vw;height: 100vh;background:rgb(237, 238, 236);display: flex;justify-content: center;align-items: center;">
         <div>
             <form action="/" method="post" id="_form">
@@ -45,6 +72,36 @@
                     <button type="submit" class="btn btn-link col-12"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Olvidaste tu contraseña?</button> 
                 </div>
             </form>
+        </div>
+    </div> -->
+
+
+    <div style="width: 100vw;height: 100vh;background:rgb(236, 237, 238);display: flex;justify-content: center;align-items: center;">
+        <div style="background:#00bcd4;min-height: 50px; padding:15px !important;" class="col-4">
+            <div class="col-12 " id="_pantalla" style="background: #80deea;height: 70px;font-size: 45px;text-align: right;">
+                0
+            </div>
+            <div class="col-12 _teclas" id="_teclas">
+                <div class="col-12 _misTeclas">C</div>
+                <div class="col-12 _misTeclas">*</div>
+                <div class="col-12 _misTeclas">/</div>
+                <div class="col-12 _misTeclas">-</div>
+                <div class="col-12 _misTeclas">7</div>
+                <div class="col-12 _misTeclas">8</div>
+                <div class="col-12 _misTeclas">9</div>
+                <div class="col-12 _misTeclas mas">+</div>
+                <div class="col-12 _misTeclas">4</div>
+                <div class="col-12 _misTeclas">5</div>
+                <div class="col-12 _misTeclas">6</div>
+                <div class="col-12 _misTeclas">1</div>
+                <div class="col-12 _misTeclas">2</div>
+                <div class="col-12 _misTeclas">3</div>
+                <div class="col-12 _misTeclas">0</div>
+                <div class="col-12 _misTeclas">.</div>
+                <div class="col-12 _misTeclas">=</div>
+
+            </div>
+
         </div>
     </div>
 

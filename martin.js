@@ -357,43 +357,58 @@ let nombreCiudad='Trujillox'
 //     llenar.appendChild(miRes)
 // }}
 
-let bdu = 
-[
-    {nombre:'martin TORO',usuario:'1234',contraseña:'1234'},
-    {nombre:'Martin Ruiz',usuario: 'admin',password: 'admin'},
-    {nombre:'Renzo Terrones',usuario: 'qwer',password: 'qwer'}
+// let bdu = 
+// [
+//     {nombre:'martin TORO',usuario:'1234',contraseña:'1234'},
+//     {nombre:'Martin Ruiz',usuario: 'admin',contraseña: 'admin'},
+//     {nombre:'Renzo Terrones',usuario: 'qwer',contraseña: 'qwer'}
 
-]
-let us = document.getElementById('u')
-let pas = document.getElementById('pa')
-let btn = document.getElementById('i')
-let f = document.getElementById('f')
+// ]
+// let us = document.getElementById('u')
+// let pas = document.getElementById('pa')
+// let btn = document.getElementById('i')
+// let f = document.getElementById('f')
 
 
-f.addEventListener('submit',(e)=>{
-    e.preventDefault()
-    let vali=false
-    for(let i=0;i<bdu.length;i++){
-        if(bdu[i].usuario == us.value && bdu[i].contraseña== pas.value){
-            swal("Correcto", 'Bienvenido'+bdu[i].nombre,"success");
-           vali=true
-            break;
-        }
-    }
-
-    vali == false
-     ? swal("ERROR", "Usuario Incorrecto","error")
-     :{}
-
-    // // // let resultado = bdu.filter(a=>a.usuario == us.value && a.contraseña == pas.value)
+// f.addEventListener('submit',(e)=>{
+//     e.preventDefault()
     
-    // // // if(resultado.length>0) swal("Correcto", 'Bienvenido'+bdu[0].nombre,"success");
-    // // // else swal("ERROR", "Usuario Incorrecto","error")
+//     // let vali=false
+//     for(let i=0;i<bdu.length;i++){
+//         if(bdu[i].usuario == us.value && bdu[i].contraseña== pas.value){
+//             // swal("Correcto", 'Bienvenido'+bdu[i].nombre,"success");
+//             console.log('Bienvenido');
+//         //    vali=true
+//             break;
+//         }else{
+//             console.log('error');
+//         }
+//     }
+
+//     // vali == false
+//     //  ? swal("ERROR", "Usuario Incorrecto","error")
+//     //  :{}
+
+//     // // // let resultado = bdu.filter(a=>a.usuario == us.value && a.contraseña == pas.value)
     
+//     // // // if(resultado.length>0) swal("Correcto", 'Bienvenido'+bdu[0].nombre,"success");
+//     // // // else swal("ERROR", "Usuario Incorrecto","error")
+    
+// })
+
+
+
+
+
+
+
+let pant = document.getElementById('pantalla')
+let tecl = document.getElementById('teclas')
+
+tecl.addEventListener('click',(e)=>{
+    let clic = e.target
+    pant.innerHTML=click.innerHTML
 })
-
-
-
 
 
 

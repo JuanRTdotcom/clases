@@ -308,35 +308,162 @@ let nombreCiudadCartajena = 'Kirume'
 // let form = document.getElementById('form')
 // form.addEventListener('submit',(e)=>{
 //     e.preventDefault()
+// // })
+// let bdUser = 
+// [
+//     {nombre:'Juan Ruiz Trujillo',usuario:'root',contraseña:'root'},
+//     {nombre:'Jean Pierre',usuario:'admin',contraseña:'admin'},
+//     {nombre:'Martin Ruiz',usuario:'qwer',contraseña:'qwer'}
+
+// ]
+// //////////////////////////////////////////
+// let user = document.getElementById('_user')
+// let pass = document.getElementById('_pass')
+// let btnIngresar = document.getElementById('Ingresar')
+// let form = document.getElementById('_form')
+
+
+// form.addEventListener('submit',(e)=>{
+//     e.preventDefault()
+//     let valida = false
+//     for(let i = 0;i<bdUser.length;i++){
+//         if(bdUser[i].usuario == user.value && bdUser[i].contraseña == pass.value){
+//             swal("Correcto", 'Bienvenido '+ bdUser[i].nombre, "success");
+//             valida=true
+//             break;
+//         }
+//     }
+//     valida==false
+//         ? swal("ERROR", 'Usuario Incorrecto', "error")
+//         : {}
 // })
-let bdUser = 
-[
-    {nombre:'Juan Ruiz Trujillo',usuario:'root',contraseña:'root'},
-    {nombre:'Jean Pierre',usuario:'admin',contraseña:'admin'},
-    {nombre:'Martin Ruiz',usuario:'qwer',contraseña:'qwer'}
 
-]
-//////////////////////////////////////////
-let user = document.getElementById('_user')
-let pass = document.getElementById('_pass')
-let btnIngresar = document.getElementById('Ingresar')
-let form = document.getElementById('_form')
+// document.getElementById('teclas').addEventListener('click',e =>{
+//     let mif = e.target
+//    console.log(mif.innerHTML)
+// })
 
 
-form.addEventListener('submit',(e)=>{
-    e.preventDefault()
-    let valida = false
-    for(let i = 0;i<bdUser.length;i++){
-        if(bdUser[i].usuario == user.value && bdUser[i].contraseña == pass.value){
-            swal("Correcto", 'Bienvenido '+ bdUser[i].nombre, "success");
-            valida=true
-            break;
-        }
-    }
-    valida==false
-        ? swal("ERROR", 'Usuario Incorrecto', "error")
+
+
+
+
+
+let pantalla = document.getElementById('_pantalla')
+let teclas = document.getElementById('_teclas')
+let estado = false 
+let primeravar
+let operador
+let segundovar
+teclas.addEventListener('click',(e)=>{
+    pantalla.innerHTML.trim() == 'ERROR'
+        ? pantalla.innerHTML='0'
         : {}
+
+    let miclic = e.target
+    
+
+    switch(e.target.innerHTML){
+        case 'C':
+            pantalla.innerHTML = '0'
+            break;
+        
+        case '*':
+            //estado=true
+            primeravar = pantalla.innerHTML
+            pantalla.innerHTML = '*'
+            operador='*'
+            
+            // let seugundapantalla = 
+            // multiplicar(parseFloat(primeravar)),)
+            break;
+        case '/':
+                //estado=true
+                primeravar = pantalla.innerHTML
+                pantalla.innerHTML = '/'
+                operador='/'
+                
+                // let seugundapantalla = 
+                // multiplicar(parseFloat(primeravar)),)
+                break;
+        case '+':
+            //estado=true
+            primeravar = pantalla.innerHTML
+            pantalla.innerHTML = '+'
+            operador='+'
+            
+            // let seugundapantalla = 
+            // multiplicar(parseFloat(primeravar)),)
+            break;
+        case '-':
+            //estado=true
+            primeravar = pantalla.innerHTML
+            pantalla.innerHTML = '-'
+            operador='-'
+            
+            // let seugundapantalla = 
+            // multiplicar(parseFloat(primeravar)),)
+            break;
+
+        case '=':
+
+            segundovar = pantalla.innerHTML
+          
+            let resultado = calcOperacion(parseFloat(primeravar),parseFloat(segundovar),operador)
+            pantalla.innerHTML=resultado
+            break;
+        default: //numeros
+            if(pantalla.innerHTML.trim() == '0' || pantalla.innerHTML == '*' || pantalla.innerHTML == '/' || pantalla.innerHTML == '+' || pantalla.innerHTML == '-'){
+                pantalla.innerHTML=''
+                pantalla.innerHTML += miclic.innerHTML
+            }else{
+                pantalla.innerHTML += miclic.innerHTML
+            }
+            
+    }
+
+
+
+
 })
+
+
+function multiplicar(...datos){
+
+}
+
+function calcOperacion(primV,segundoV,operador){
+
+    switch(operador){
+        case '*':
+            return primV * segundoV
+            break;
+        case '/':
+            let res = primV / segundoV
+            if(segundoV==0) return 'ERROR'
+            else return res
+            break;
+        case '+':
+            return primV + segundoV
+            break;
+        case '-':
+            return primV - segundoV
+            break;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
